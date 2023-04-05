@@ -60,3 +60,37 @@ O mundo como o conhecemos caiu em um cenário apocalíptico. Um vírus produzido
 ### 🛟 Negócios (representa a troca de itens entre os sobreviventes)
  - Realizar troca de itens informados para cada sobrevivente:
     - __POST /business/__
+
+## 🎯 Projeto
+ - Fazendo o clone do repositorio:
+ ```
+ git clone https://github.com/brunnuscz/desafio-sobrevivencia-zumbi.git
+ ```
+ - Entrando na pasta do projeto:
+ ```
+ cd desafio-sobrevivencia-zumbi
+ ```
+ - É preciso ter o python instalado na máquina:
+ ```
+ sudo apt install python
+ ```
+ - Para cria uma env:
+ ```
+ python -m venv env
+ ```
+ - Para ativar a env:
+ ```
+ source env/bin/activate
+ ```
+ - Instale os requisitos:
+ ```
+ pip install -r requirements.txt
+ ```
+ - Para rodas as migrations:
+ ```
+ python manage.py migrate
+ ```
+ - Por fim rode o comando:
+ ```
+ python manage.py runserver
+ ```
