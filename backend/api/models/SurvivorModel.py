@@ -6,12 +6,12 @@ class SurvivorModel(models.Model):
         db_table = 'survivors'
     
     name = models.CharField(max_length=100)
-    age = models.IntegerField(max_length=3)
+    age = models.IntegerField()
     sex = models.CharField()
-    longitude = models.CharField()
-    latitude = models.CharField()
-    state = models.BooleanField(default=False)
-    countAlerts = models.IntegerField(default=0)
+    longitude = models.FloatField()
+    latitude = models.FloatField()
+    contaminated = models.BooleanField(default=False)
+    amountAlerts = models.IntegerField(default=0)
 
     def __str__(self):
         return self.name
