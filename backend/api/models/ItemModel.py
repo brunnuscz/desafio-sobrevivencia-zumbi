@@ -7,3 +7,6 @@ class ItemModel(models.Model):
 
     name = models.CharField(max_length=100)
     point = models.IntegerField()
+
+    def __str__(self):
+        return self.name

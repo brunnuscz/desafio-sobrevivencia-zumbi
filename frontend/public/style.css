@@ -1,0 +1,14 @@
+.fundo{
+    background: #fafafa;
+}
+.navbar-color{
+    background: #128843;
+    border-radius: 0 0 20px 20px;
+}
+li{
+    font-weight: 900;
+    font-size: 20px;
+}
+.botao {
+    width: 100px;
+}

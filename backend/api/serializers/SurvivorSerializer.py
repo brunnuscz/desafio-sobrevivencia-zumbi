@@ -4,4 +4,4 @@ from api.models.SurvivorModel import SurvivorModel
 class SurvivorSerializer(ModelSerializer):
     class Meta:
         model = SurvivorModel
-        fields = '__all__'
+        fields = ['id', 'name', 'age', 'sex', 'latitude', 'longitude', 'contaminated', 'reports']

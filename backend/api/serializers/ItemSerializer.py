@@ -4,4 +4,4 @@ from api.models.ItemModel import ItemModel
 class ItemSerializer(ModelSerializer):
     class Meta:
         model = ItemModel
-        fields = '__all__'
+        fields = ['id', 'name', 'point']
