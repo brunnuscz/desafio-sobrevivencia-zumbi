@@ -11,11 +11,11 @@
                 <table class="table table-bordered">
                     <thead>
                         <tr class="text-center">
-                        <th scope="row">#</th>
-                        <th scope="col">Id</th>
-                        <th scope="col">Nome</th>
-                        <th scope="col">Pontos</th>
-                        <th scope="col">Ações</th>
+                            <th scope="row">#</th>
+                            <th scope="col">Id</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Pontos</th>
+                            <th scope="col">Ações</th>
                         </tr>
                     </thead>
                     <tbody>

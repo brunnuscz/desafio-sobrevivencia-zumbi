@@ -3,8 +3,8 @@ from api.views import InventoryView
 
 
 urlpatterns = [
-    path('inventories/', InventoryView.InventoryList.as_view()),
-    path('inventories/<int:pk>/', InventoryView.InventoryDetail.as_view()),
+    path('', InventoryView.InventoryList.as_view()),
+    path('<int:pk>/', InventoryView.InventoryDetail.as_view()),
 ]
 
 """

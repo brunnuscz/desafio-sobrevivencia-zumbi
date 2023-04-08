@@ -2,7 +2,9 @@
   <div id="app" >
       <nav class="navbar navbar-expand navbar-color p-3">
         <div class="collapse navbar-collapse" id="navbar">
-          <a class="navbar-brand" href="/index">ZSSN</a>
+          <a class="navbar-brand" href="/index">
+            <img src="../public/zombie.png" alt="Zombie">
+          </a>
           <ul class="navbar-nav">
             <li class="nav-item">
               <router-link to="/index" class="nav-link">Página Inicial</router-link>

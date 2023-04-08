@@ -2,13 +2,25 @@
     background: #fafafa;
 }
 .navbar-color{
-    background: #128843;
+    background: #2d8652;
     border-radius: 0 0 20px 20px;
-}
-li{
-    font-weight: 900;
-    font-size: 20px;
 }
 .botao {
     width: 100px;
+}
+#navbar img{
+    width: 40px;
+    margin-left: 10px;
+}
+#navbar{
+    justify-content: space-between;
+    background-color: 5px 0;
+}
+#navbar .nav-link{
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+}
+#navbar .nav-link:hover{
+    color: rgb(204, 204, 204);
 }

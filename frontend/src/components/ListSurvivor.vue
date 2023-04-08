@@ -4,6 +4,9 @@
             <div class="text-center m-4">
                 <h1>Sobreviventes</h1>
             </div>
+            
+            <router-link to="/register" class="btn btn-success mt-3">Cadastrar sobrevivente</router-link>
+
             <table class="table table-bordered mt-3">
                 <thead>
                     <tr class="text-center">

@@ -10,5 +10,6 @@ export default new Router({
     { path: "/edit/:id", name: "edit", component: () => import("./components/EditItem.vue") },
     { path: "/index", name: "index", component: () => import("./components/Home.vue") },
     { path: "/list/survivors/", name: "list_survivors", component: () => import("./components/ListSurvivor.vue") },
+    { path: "/register/", name: "register", component: () => import("./components/Register.vue") },
   ]
 });
