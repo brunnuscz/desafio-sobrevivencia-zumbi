@@ -48,7 +48,7 @@ export default {
                     return e;
                 }
                 axios.post('http://127.0.0.1:8000/items/', this.item ).then(response => {
-                    this.$router.push('/');
+                    this.$router.push('/items/');
                     return response;
                 });
             });

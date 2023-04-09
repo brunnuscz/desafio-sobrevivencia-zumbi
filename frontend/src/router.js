@@ -9,7 +9,9 @@ export default new Router({
     { path: "/create", name: "create", component: () => import("./components/Createitem.vue") },
     { path: "/edit/:id", name: "edit", component: () => import("./components/EditItem.vue") },
     { path: "/index", name: "index", component: () => import("./components/Home.vue") },
-    { path: "/list/survivors/", name: "list_survivors", component: () => import("./components/ListSurvivor.vue") },
+    { path: "/items/", name: "items", component: () => import("./components/ListItem.vue") },
+    { path: "/survivors/", name: "survivors", component: () => import("./components/ListSurvivor.vue") },
     { path: "/register/", name: "register", component: () => import("./components/Register.vue") },
+    { path: "/inventories/", name: "inventories", component: () => import("./components/ListInventory.vue") },
   ]
 });

@@ -1,6 +1,5 @@
 from django.db import models
 
-
 class SurvivorModel(models.Model):
     class Meta:
         db_table = 'survivors'
@@ -17,6 +16,6 @@ class SurvivorModel(models.Model):
     latitude = models.FloatField()
     contaminated = models.BooleanField(default=False)
     reports = models.IntegerField(default=0)
-
+    
     def __str__(self):
         return self.name

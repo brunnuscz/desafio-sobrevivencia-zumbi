@@ -1,11 +1,11 @@
 <template>
     <div id="app">
+        <router-link to="/register" class="btn btn-success mt-3">Cadastrar sobrevivente</router-link>
         <div v-if="survivors && survivors.length">
             <div class="text-center m-4">
                 <h1>Sobreviventes</h1>
             </div>
             
-            <router-link to="/register" class="btn btn-success mt-3">Cadastrar sobrevivente</router-link>
 
             <table class="table table-bordered mt-3">
                 <thead>
@@ -15,6 +15,7 @@
                         <th scope="col">Nome</th>
                         <th scope="col">Idade</th>
                         <th scope="col">Sexo</th>
+                        <th scope="col">Infectado</th>
                         <th scope="col">Latitude</th>
                         <th scope="col">Longitude</th>
                         <th scope="col">Nº de Sinalizações</th>
@@ -28,6 +29,7 @@
                         <td class="text-center">{{ survivor.name }}</td>
                         <td class="text-center">{{ survivor.age }}</td>
                         <td class="text-center">{{ survivor.sex }}</td>
+                        <td class="text-center">{{ survivor.contaminated }}</td>
                         <td class="text-center">{{ survivor.latitude }}</td>
                         <td class="text-center">{{ survivor.longitude }}</td>
                         <td class="text-center">{{ survivor.reports }}</td>
@@ -39,7 +41,9 @@
                 </tbody>
             </table>
         </div>
-        <p  v-if="survivors.length == 0">Nenhum Sobrevivente Cadastrado...</p>
+        <div class="text-center mt-4">
+            <p  v-if="survivors.length == 0">Nenhum Sobrevivente Cadastrado...</p>
+        </div>
     </div>
     
 </template>

@@ -94,6 +94,7 @@ export default {
     name: 'RegisterTeste',
     data() {
         return {
+            survivors: [],
             survivor: {
                 name: '',
                 age: '',
@@ -129,7 +130,7 @@ export default {
                     return e;
                 }
                 axios.post('http://127.0.0.1:8000/survivors/', this.survivor ).then(response => {
-                    this.$router.push('/list/survivors/');
+                    this.$router.push('/survivors/');
                     return response;
                 });
             });

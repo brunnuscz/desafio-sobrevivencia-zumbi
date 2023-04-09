@@ -24,3 +24,7 @@
 #navbar .nav-link:hover{
     color: rgb(204, 204, 204);
 }
+.card h3{
+    color: #2d8652;
+    text-align: center;
+}

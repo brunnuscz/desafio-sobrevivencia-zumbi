@@ -11,11 +11,15 @@
             </li>
 
             <li class="nav-item">
-              <router-link to="/list/survivors/" class="nav-link">Sobreviventes</router-link>
+              <router-link to="/items" class="nav-link">Items</router-link>
             </li>
 
             <li class="nav-item">
-              <router-link to="/index" class="nav-link">Inventário</router-link>
+              <router-link to="/survivors" class="nav-link">Sobreviventes</router-link>
+            </li>
+
+            <li class="nav-item">
+              <router-link to="/inventories" class="nav-link">Inventário</router-link>
             </li>
           </ul>
         </div>
