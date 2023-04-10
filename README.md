@@ -44,7 +44,12 @@ O mundo como o conhecemos caiu em um cenário apocalíptico. Um vírus produzido
  - Realizar troca de itens informados para cada sobrevivente:
     - __POST /business/__
 
-## 🎯 Projeto
+## Prévia
+<img src="./screenshots/page-items.png" width="500">
+<img src="./screenshots/page-register.png" width="500">
+<img src="./screenshots/page-survivors.png" width="500">
+
+## Projeto
  - Fazendo o clone do repositorio:
  ```
  git clone https://github.com/brunnuscz/desafio-sobrevivencia-zumbi.git
