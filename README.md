@@ -1,10 +1,6 @@
 ## 📌 Desafio
 O mundo como o conhecemos caiu em um cenário apocalíptico. Um vírus produzido em laboratório está transformando seres humanos e animais em zumbis, famintos por carne fresca. Você, como membro da resistência aos zumbis (e o último sobrevivente que sabe codificar), foi designado para desenvolver um sistema para compartilhar recursos entre humanos não infectados.
 
-## 🔎 Link deploy
-
-- https://desafio-sobrevivencia-zumbi.app.com
-
 
 ## 📋 Exigências
  - Linguagens: Python, Css, JavaScript, Html;
