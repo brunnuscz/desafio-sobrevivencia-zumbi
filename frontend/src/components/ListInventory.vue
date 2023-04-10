@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <router-link to="/create" class="btn btn-success mt-3">Criar item</router-link>
+        
         <div v-if="items && items.length">
             <div class="text-center m-4">
                 <h1>Itens</h1>
@@ -28,8 +28,8 @@
                 </table>
             </div>
         </div>
-        <div class="text-center">
-            <p  v-if="inventories.length == 0">Nennum Inventorio...</p>
+        <div class="text-center mt-5">
+            <p  v-if="inventories.length == 0">Nennum Inventario...</p>
         </div>
     </div>
 
