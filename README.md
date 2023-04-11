@@ -36,7 +36,7 @@ O mundo como o conhecemos caiu em um cenário apocalíptico. Um vírus produzido
       "age": 22,
       "sex": "M",
       "latitude": 2.4344,
-      "longitude": 3.434,
+      "longitude": 3.4334,
       "inventory": [
          {
             "id": 4,
@@ -48,6 +48,14 @@ O mundo como o conhecemos caiu em um cenário apocalíptico. Um vírus produzido
  - Irá retornar detalhes do sobrevivente:
     - __GET /survivors/detail/id_survivor/__
     
+ - Irá atualizar local do sobrevivente:
+   - __PUT /survivors/update/5/__
+   ```
+   {
+      "latitude": 20.4344,
+      "longitude": 10.4344,
+   }
+   ```
  - Irá deletar o sobrevivente:
     - __DELETE /survivors/delete/id_survivor/__
 
