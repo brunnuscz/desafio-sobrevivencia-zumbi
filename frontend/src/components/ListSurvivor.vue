@@ -1,6 +1,8 @@
 <template>
     <div id="app">
-        <router-link to="/register" class="btn btn-success mt-3">Cadastrar sobrevivente</router-link>
+        <!-- 
+            <router-link to="/register" class="btn btn-success mt-3">Cadastrar sobrevivente</router-link>
+        -->
         <div v-if="survivors && survivors.length">
             <div class="text-center m-4">
                 <h1>Sobreviventes</h1>

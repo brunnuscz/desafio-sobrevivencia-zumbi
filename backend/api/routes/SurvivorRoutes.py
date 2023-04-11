@@ -3,6 +3,8 @@ from api.views import SurvivorView
 
 
 urlpatterns = [
-    path('', SurvivorView.SurvivorList.as_view()),
-    path('<int:pk>/', SurvivorView.SurvivorDetail.as_view()),
+    path('', SurvivorView.survivorsList, name='survivors'),
+    path('detail/<int:pk>/', SurvivorView.survivorsDetail, name='survivor-detail'),
+    path('create/', SurvivorView.survivorsCreate, name='survivor-create'),
+    path('delete/<int:pk>/', SurvivorView.survivorsDelete, name='survivor-delete'),
 ]

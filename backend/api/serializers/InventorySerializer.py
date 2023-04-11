@@ -7,12 +7,11 @@ from api.serializers.SurvivorSerializer import SurvivorSerializer
 class InventorySerializer(serializers.ModelSerializer):
     class Meta:
         model = InventoryModel
-        exclude = ['id', 'item', 'survivor', 'amount']
+        exclude = ['id']
 
     def to_representation(self, instance):
         return {
             'item': ItemSerializer(instance.item).data,
-            'survivor': SurvivorSerializer(instance.survivor).data,
             'amount': instance.amount
         }
  

@@ -1,6 +1,8 @@
 <template>
     <div id="app">
-        <router-link to="/create" class="btn btn-success mt-3">Criar item</router-link>
+        <!-- 
+            <router-link to="/create" class="btn btn-success mt-3">Criar item</router-link>
+        -->
         <div v-if="items && items.length">
             <div class="text-center m-4">
                 <h1>Itens</h1>
@@ -34,7 +36,7 @@
             </div>
         </div>
         <div class="text-center">
-            <p  v-if="items.length == 0">Nenum Item Criado...</p>
+            <p  v-if="items.length == 0">Nenhum Item Criado...</p>
         </div>
     </div>
 

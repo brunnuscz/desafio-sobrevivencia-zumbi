@@ -3,6 +3,7 @@ from api.views import ItemView
 
 
 urlpatterns = [
-    path('', ItemView.ItemList.as_view()),
-    path('<int:pk>/', ItemView.ItemDetail.as_view()),
+    path('', ItemView.itemsList, name='items'),
+    path('create/', ItemView.itemsCreate, name='items-create'),
+    path('delete/<int:pk>/', ItemView.itemsDelete, name='items-delete'),
 ]

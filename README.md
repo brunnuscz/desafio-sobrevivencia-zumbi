@@ -29,9 +29,28 @@ O mundo como o conhecemos caiu em um cenário apocalíptico. Um vírus produzido
     - __GET /survivors/__
  - Irá cadastrar um novo sobrevivente no sistema, juntamente com seus itens do inventário:
     - __POST /survivors/create/__
+   ```
+   {
+      "name": "Bruno Cruz",
+      "age": 22,
+      "sex": "M",
+      "latitude": 2.4344,
+      "longitude": 3.434,
+      "inventory": [
+         {
+            "id": 4,
+            "amount": 2
+         }
+      ]
+   }
+   ```
+ - Irá retornar detalhes do sobrevivente:
+    - __POST /survivors/detail/id_survivor/__
+ - Irá deletar o sobrevivente:
+    - __POST /survivors/delete/id_survivor/__
 
 ### Inventários (representa o local onde estão os itens dos usuários)
- - Irá exebir uma lista contendo os inventários de todos os sobeviventes:
+ - Irá exibir uma lista contendo os inventários de todos os sobeviventes:
     - __PUT /inventories/__
 
 ### Itens (representa os itens dos usuários)
@@ -39,10 +58,8 @@ O mundo como o conhecemos caiu em um cenário apocalíptico. Um vírus produzido
     - __GET /items/__
  - Adicionar um novo item no sistema:
     - __POST /items/create/__
-   
-### Negócios (representa a troca de itens entre os sobreviventes)
- - Realizar troca de itens informados para cada sobrevivente:
-    - __POST /business/__
+ - Irá deletar o item:
+    - __POST /items/delete/id_item/__   
 
 ## Prévia
 <img src="./screenshots/page-items.png" width="500">
