@@ -7,7 +7,7 @@ from api.models.ItemModel import ItemModel
 from api.serializers.SurvivorSerializer import SurvivorSerializer
 from api.serializers.InventorySerializer import InventorySerializer
 
-# ATUALIZAR LOCALIZAÇÃO DO SOBREVIVENTE
+# LISTAR TODOS OS SOBREVIVENTES
 @api_view(['GET'])
 def survivorsList(request):
     survivors = SurvivorModel.objects.all()
