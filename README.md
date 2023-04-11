@@ -45,21 +45,22 @@ O mundo como o conhecemos caiu em um cenário apocalíptico. Um vírus produzido
    }
    ```
  - Irá retornar detalhes do sobrevivente:
-    - __POST /survivors/detail/id_survivor/__
+    - __GET /survivors/detail/id_survivor/__
  - Irá deletar o sobrevivente:
-    - __POST /survivors/delete/id_survivor/__
+    - __DELETE /survivors/delete/id_survivor/__
 
 ### Inventários (representa o local onde estão os itens dos usuários)
  - Irá exibir uma lista contendo os inventários de todos os sobeviventes:
-    - __PUT /inventories/__
+    - __GET /inventories/__
 
 ### Itens (representa os itens dos usuários)
  - Irá exibir uma lista contendo todos os itens cadastrados no sistema
     - __GET /items/__
+    
  - Adicionar um novo item no sistema:
     - __POST /items/create/__
  - Irá deletar o item:
-    - __POST /items/delete/id_item/__   
+    - __DELETE /items/delete/id_item/__   
 
 ## Prévia
 <img src="./screenshots/page-items.png" width="500">
