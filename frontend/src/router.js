@@ -12,6 +12,6 @@ export default new Router({
     { path: "/items/", name: "items", component: () => import("./components/ListItem.vue") },
     { path: "/survivors/", name: "survivors", component: () => import("./components/ListSurvivor.vue") },
     { path: "/register/", name: "register", component: () => import("./components/Register.vue") },
-    { path: "/inventories/", name: "inventories", component: () => import("./components/ListInventory.vue") },
+    { path: "/inventories", name: "inventories", component: () => import("./components/ListInventory.vue") },
   ]
 });

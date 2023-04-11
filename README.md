@@ -6,6 +6,7 @@ O mundo como o conhecemos caiu em um cenário apocalíptico. Um vírus produzido
  - Frameworks: Django e Django Rest;
  - Banco de dados: Postgres;
  - Controle de versões: Git;
+ - Criação da interface;
 
 ## Casos de uso
  - Adicionar sobrevivente ao banco de dados;
@@ -25,7 +26,7 @@ O mundo como o conhecemos caiu em um cenário apocalíptico. Um vírus produzido
 ## Documentação API
 
 ### Sobreviventes (representa os usuários)
- - Irá exibir uma lista contendo todos os usuários:
+ - Irá exibir uma lista contendo todos os sobreviventes:
     - __GET /survivors/__
  - Irá cadastrar um novo sobrevivente no sistema, juntamente com seus itens do inventário:
     - __POST /survivors/create/__
@@ -46,6 +47,7 @@ O mundo como o conhecemos caiu em um cenário apocalíptico. Um vírus produzido
    ```
  - Irá retornar detalhes do sobrevivente:
     - __GET /survivors/detail/id_survivor/__
+    
  - Irá deletar o sobrevivente:
     - __DELETE /survivors/delete/id_survivor/__
 
@@ -59,6 +61,12 @@ O mundo como o conhecemos caiu em um cenário apocalíptico. Um vírus produzido
     
  - Adicionar um novo item no sistema:
     - __POST /items/create/__
+   ```
+   {
+      "name": "Alimentação",
+      "point": 3
+   }
+   ```
  - Irá deletar o item:
     - __DELETE /items/delete/id_item/__   
 
